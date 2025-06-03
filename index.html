@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsixoSağlam - Online Psixologiya Platforması</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="psychologist.css">
+    <link rel="stylesheet" href="article.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Psixo<span>Sağlam</span></h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home" class="active">Ana Səhifə</a></li>
+                    <li><a href="#tests">Testlər</a></li>
+                    <li><a href="#appointment">Randevu</a></li>
+                    <li><a href="#psychologists">Psixoloqlar</a></li>
+                    <li><a href="#articles">Məqalələr</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ruh sağlamlığınız bizim üçün önəmlidir</h1>
+                <p>PsixoSağlam platforması ilə professional psixoloqlarla əlaqə saxlayın, testlər keçin və maraqlı məqalələr oxuyun.</p>
+                <div class="hero-buttons">
+                    <a href="#tests" class="btn primary">Testlər Keçin</a>
+                    <a href="#appointment" class="btn secondary">Randevu Alın</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg" alt="Psixologiya konsultasiyası">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Psixoloji Testlər</h3>
+                <p>Müxtəlif psixoloji testlər keçərək özünüzü daha yaxşı tanıyın.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Onlayn Randevu</h3>
+                <p>Sizə uyğun vaxtda psixoloq ilə görüş təyin edin.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Peşəkar Psixoloqlar</h3>
+                <p>Təcrübəli və ixtisaslı psixoloqlarla əməkdaşlıq edirik.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Faydalı Məqalələr</h3>
+                <p>Ruh sağlamlığı haqqında maraqlı və faydalı məqalələr.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tests Section -->
+    <section id="tests" class="tests">
+        <div class="container">
+            <div class="section-header">
+                <h2>Psixoloji Testlər</h2>
+                <p>Özünüzü daha yaxşı tanımaq üçün psixoloji testlərimizi keçin</p>
+            </div>
+            <div class="tests-grid">
+                <div class="test-card" data-test="anxiety">
+                    <div class="test-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Təşviş Testi</h3>
+                    <p>Təşviş səviyyənizi ölçün və nə qədər narahat olduğunuzu öyrənin.</p>
+                    <button class="btn start-test">Testə Başlayın</button>
+                </div>
+                <div class="test-card" data-test="depression">
+                    <div class="test-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h3>Depressiya Testi</h3>
+                    <p>Depressiya əlamətlərinizi qiymətləndirin və nəticələri əldə edin.</p>
+                    <button class="btn start-test">Testə Başlayın</button>
+                </div>
+                <div class="test-card" data-test="personality">
+                    <div class="test-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Şəxsiyyət Testi</h3>
+                    <p>Şəxsiyyət xüsusiyyətlərinizi və xarakterinizi öyrənin.</p>
+                    <button class="btn start-test">Testə Başlayın</button>
+                </div>
+                <div class="test-card" data-test="stress">
+                    <div class="test-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Stress Testi</h3>
+                    <p>Stress səviyyənizi ölçün və öhdəsindən gəlmə yollarını öyrənin.</p>
+                    <button class="btn start-test">Testə Başlayın</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Modal -->
+    <div class="modal" id="test-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="test-container">
+                <h2 id="test-title">Test Başlığı</h2>
+                <div id="test-description" class="test-description">
+                    <p>Test haqqında məlumat burada olacaq.</p>
+                </div>
+                <div id="test-questions" class="test-questions">
+                </div>
+                <div id="test-results" class="test-results hidden">
+                </div>
+                <div class="test-controls">
+                    <button id="test-start-btn" class="btn primary">Başla</button>
+                    <button id="test-next-btn" class="btn primary hidden">Növbəti</button>
+                    <button id="test-finish-btn" class="btn primary hidden">Bitir</button>
+                    <button id="test-restart-btn" class="btn secondary hidden">Yenidən Başla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <div class="section-header">
+                <h2>Randevu</h2>
+                <p>Psixoloqlarımızla görüşmək üçün uyğun vaxtı seçin</p>
+            </div>
+            <div class="appointment-container">
+                <div class="appointment-calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                        <h3 id="current-month-year">Aprel 2025</h3>
+                        <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="weekdays">
+                        <div>B.e</div>
+                        <div>Ç.a</div>
+                        <div>Ç</div>
+                        <div>C.a</div>
+                        <div>C</div>
+                        <div>Ş</div>
+                        <div>B</div>
+                    </div>
+                    <div id="calendar-days" class="days">
+                    </div>
+                    <div class="time-slots">
+                        <h4>Əlçatan vaxtlar:</h4>
+                        <div id="available-times" class="available-times">
+                        </div>
+                    </div>
+                </div>
+                <div class="appointment-form">
+                    <h3>Randevu məlumatları</h3>
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-poçt</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="psychologist">Psixoloq</label>
+                            <select id="psychologist" name="psychologist" required>
+                                <option value="">Psixoloq seçin</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="issue">Müraciət səbəbi</label>
+                            <textarea id="issue" name="issue" rows="3"></textarea>
+                        </div>
+                        <div class="selected-datetime">
+                            <p>Seçilmiş tarix: <span id="selected-date">Seçilməyib</span></p>
+                            <p>Seçilmiş vaxt: <span id="selected-time">Seçilməyib</span></p>
+                        </div>
+                        <button type="submit" class="btn primary" id="book-appointment" disabled>Randevu Alın</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Psychologists Section -->
+    <section id="psychologists" class="psychologists">
+        <div class="container">
+            <div class="section-header">
+                <h2>Psixoloqlarımız</h2>
+                <p>Təcrübəli və peşəkar psixoloqlarımız sizə kömək etməyə hazırdır</p>
+            </div>
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="psychologist-search" placeholder="Psixoloq axtar...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-box">
+                    <select id="specialty-filter">
+                        <option value="">Bütün ixtisaslar</option>
+                        <option value="clinical">Klinik Psixologiya</option>
+                        <option value="child">Uşaq Psixologiyası</option>
+                        <option value="family">Ailə Psixologiyası</option>
+                        <option value="cognitive">Koqnitiv Psixologiya</option>
+                    </select>
+                </div>
+            </div>
+            <div class="psychologists-grid" id="psychologists-grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Psychologist Modal -->
+    <div class="modal" id="psychologist-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="psychologist-details">
+                <div class="psychologist-header">
+                    <div class="psychologist-image">
+                        <img id="modal-psychologist-img" src="" alt="Psixoloq">
+                    </div>
+                    <div class="psychologist-info">
+                        <h2 id="modal-psychologist-name"></h2>
+                        <p id="modal-psychologist-specialty"></p>
+                        <div class="rating" id="modal-psychologist-rating"></div>
+                    </div>
+                </div>
+                <div class="psychologist-bio" id="modal-psychologist-bio"></div>
+                <div class="psychologist-education" id="modal-psychologist-education"></div>
+                <div class="psychologist-experience" id="modal-psychologist-experience"></div>
+                <div class="psychologist-contact">
+                    <a href="#appointment" class="btn primary book-with-psychologist">Randevu Al</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Məqalələr</h2>
+                <p>Ruh sağlamlığı haqqında faydalı məqalələr və tövsiyələr</p>
+            </div>
+            <div class="articles-filter">
+                <div class="search-box">
+                    <input type="text" id="article-search" placeholder="Məqalə axtar...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">Hamısı</button>
+                    <button class="category-tab" data-category="anxiety">Təşviş</button>
+                    <button class="category-tab" data-category="depression">Depressiya</button>
+                    <button class="category-tab" data-category="relationships">Münasibətlər</button>
+                    <button class="category-tab" data-category="self-growth">Özünü İnkişaf</button>
+                </div>
+            </div>
+            <div class="articles-grid" id="articles-grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div class="modal" id="article-modal">
+        <div class="modal-content article-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="article-details">
+                <div class="article-header">
+                    <h2 id="modal-article-title"></h2>
+                    <div class="article-meta">
+                        <span id="modal-article-date"></span>
+                        <span id="modal-article-author"></span>
+                        <span id="modal-article-category"></span>
+                    </div>
+                </div>
+                <div class="article-image">
+                    <img id="modal-article-img" src="" alt="Məqalə şəkli">
+                </div>
+                <div class="article-content" id="modal-article-content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Confirmation Modal -->
+    <div class="modal" id="confirmation-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="confirmation-content">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Randevu təsdiqləndi!</h2>
+                <p>Hörmətli <span id="confirmation-name"></span>, randevunuz uğurla təsdiqləndi.</p>
+                <div class="confirmation-details">
+                    <p><strong>Tarix:</strong> <span id="confirmation-date"></span></p>
+                    <p><strong>Vaxt:</strong> <span id="confirmation-time"></span></p>
+                    <p><strong>Psixoloq:</strong> <span id="confirmation-psychologist"></span></p>
+                </div>
+                <p>Randevu təfərrüatları e-poçtunuza göndəriləcək.</p>
+                <button class="btn primary" id="confirmation-close">Bağla</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Psixo<span>Sağlam</span></h2>
+                    <p>Ruh sağlamlığınız bizim üçün önəmlidir.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Sürətli Keçidlər</h3>
+                    <ul>
+                        <li><a href="#home">Ana Səhifə</a></li>
+                        <li><a href="#tests">Testlər</a></li>
+                        <li><a href="#appointment">Randevu</a></li>
+                        <li><a href="#psychologists">Psixoloqlar</a></li>
+                        <li><a href="#articles">Məqalələr</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Əlaqə</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bakı şəhəri, Nəsimi rayonu</p>
+                    <p><i class="fas fa-phone"></i> +994 50 123 45 67</p>
+                    <p><i class="fas fa-envelope"></i> info@psixosaglam.az</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Sosial Media</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PsixoSağlam. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="test.js"></script>
+    <script src="psychologist.js"></script>
+    <script src="article.js"></script>
+</body>
+</html>
